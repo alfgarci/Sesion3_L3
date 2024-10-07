@@ -4,9 +4,12 @@ public class Cuenta {
 
 	double saldo;
 
+	public Cuenta(double saldo) {
+		this.saldo = saldo;
+	}
 
 	public double getSaldo() {
-		return 500d;
+		return saldo;
 	}
 
 	public void setSaldo(double saldo) {
@@ -14,12 +17,12 @@ public class Cuenta {
 	}
 
 	public void ingresar(int i) {
-		// TODO Auto-generated method stub
+		this.saldo += i;
 		
 	}
 
 	public void retirar(int i) {
-		// TODO Auto-generated method stub
+		this.saldo -= i;
 		
 	}
 	
